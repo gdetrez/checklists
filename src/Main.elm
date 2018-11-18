@@ -146,7 +146,7 @@ viewChecklistMenu checklists =
             [ h1 [ class "f3 f2-m f1-l fw2 black-90 mv3" ]
                 [ text "Checklists" ]
             ]
-        , ul [ class "list measure center" ] <| List.map viewChecklistLink <| Array.toIndexedList checklists
+        , ul [ class "pl0 list measure center" ] <| List.map viewChecklistLink <| Array.toIndexedList checklists
         ]
 
 
@@ -158,14 +158,14 @@ viewChecklist checklist =
                 [ text checklist.title ]
             ]
         , section []
-            [ ul [ class "list measure center" ] <| List.indexedMap viewChecklistItem checklist.items
+            [ ul [ class "pl0 list measure center" ] <| List.indexedMap viewChecklistItem checklist.items
             ]
         ]
 
 
 viewChecklistItem : Int -> ChecklistItem -> Html Msg
 viewChecklistItem id item =
-    li [ class "lh-copy bb b--black-10" ]
+    li [ class "pa3 lh-copy bb b--black-10" ]
         [ label []
             [ input [ Html.Attributes.checked item.checked, type_ "checkbox", onClick <| Toggle id ] []
             , text item.description
@@ -174,7 +174,7 @@ viewChecklistItem id item =
 
 
 viewChecklistLink ( i, checklist ) =
-    li [ class "lh-copy bb b--black-10" ]
-        [ a [ class "small-caps pa3 link", href "#", onClick (SelectChecklist i) ]
+    li [ class "pa3 bb b--black-10" ]
+        [ a [ class " small-caps pa3 link", href "#", onClick (SelectChecklist i) ]
             [ text checklist.title ]
         ]
