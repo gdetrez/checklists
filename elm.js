@@ -5169,7 +5169,7 @@ var author$project$Main$viewChecklistItem = F2(
 			elm$html$Html$li,
 			_List_fromArray(
 				[
-					elm$html$Html$Attributes$class('lh-copy bb b--black-10')
+					elm$html$Html$Attributes$class('pa3 lh-copy bb b--black-10')
 				]),
 			_List_fromArray(
 				[
@@ -5231,7 +5231,7 @@ var author$project$Main$viewChecklist = function (checklist) {
 						elm$html$Html$ul,
 						_List_fromArray(
 							[
-								elm$html$Html$Attributes$class('list measure center')
+								elm$html$Html$Attributes$class('pl0 list measure center')
 							]),
 						A2(elm$core$List$indexedMap, author$project$Main$viewChecklistItem, checklist.items))
 					]))
@@ -5254,7 +5254,7 @@ var author$project$Main$viewChecklistLink = function (_n0) {
 		elm$html$Html$li,
 		_List_fromArray(
 			[
-				elm$html$Html$Attributes$class('lh-copy bb b--black-10')
+				elm$html$Html$Attributes$class('pa3 bb b--black-10')
 			]),
 		_List_fromArray(
 			[
@@ -5262,7 +5262,7 @@ var author$project$Main$viewChecklistLink = function (_n0) {
 				elm$html$Html$a,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$class('small-caps pa3 link'),
+						elm$html$Html$Attributes$class(' small-caps pa3 link'),
 						elm$html$Html$Attributes$href('#'),
 						elm$html$Html$Events$onClick(
 						author$project$Main$SelectChecklist(i))
@@ -5325,7 +5325,7 @@ var author$project$Main$viewChecklistMenu = function (checklists) {
 				elm$html$Html$ul,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$class('list measure center')
+						elm$html$Html$Attributes$class('pl0 list measure center')
 					]),
 				A2(
 					elm$core$List$map,
