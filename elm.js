@@ -5182,6 +5182,7 @@ var author$project$Main$viewChecklistItem = F2(
 							elm$html$Html$input,
 							_List_fromArray(
 								[
+									elm$html$Html$Attributes$class('mr2'),
 									elm$html$Html$Attributes$checked(item.checked),
 									elm$html$Html$Attributes$type_('checkbox'),
 									elm$html$Html$Events$onClick(
