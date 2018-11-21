@@ -167,7 +167,9 @@ viewChecklistItem : Int -> ChecklistItem -> Html Msg
 viewChecklistItem id item =
     li [ class "pa3 lh-copy bb b--black-10" ]
         [ label []
-            [ input [ Html.Attributes.checked item.checked, type_ "checkbox", onClick <| Toggle id ] []
+            [ input
+                [ class "mr2", Html.Attributes.checked item.checked, type_ "checkbox", onClick <| Toggle id ]
+                []
             , text item.description
             ]
         ]
