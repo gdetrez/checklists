@@ -5596,7 +5596,7 @@ var author$project$Main$main = elm$browser$Browser$document(
 					[
 						author$project$Main$view(model)
 					]),
-				title: 'Elm • TodoMVC'
+				title: '📋 Checklists'
 			};
 		}
 	});
