@@ -124,7 +124,7 @@ main : Program () Model Msg
 main =
     Browser.document
         { init = init
-        , view = \model -> { title = "Elm • TodoMVC", body = [ view model ] }
+        , view = \model -> { title = "📋 Checklists", body = [ view model ] }
         , update = update
         , subscriptions = \_ -> Sub.none
         }
