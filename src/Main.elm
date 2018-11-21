@@ -19,20 +19,20 @@ type alias ChecklistItem =
 myChecklists : Array Checklist
 myChecklists =
     Array.fromList
-        [ mchecklist "Work Daily Review"
+        [ mchecklist "🏢 Daily Review"
             [ "Journal"
             , "Install updates"
             , "Sync (tasks, books, passwords)"
             , "Refresh PGP keys"
             , "Fill hours in Odoo"
             ]
-        , mchecklist "Work Weekly Review"
+        , mchecklist "🏢 Weekly Review"
             [ "Clear desk"
             , "Empty Gmail Inbox"
             , "Empty Downloads"
             , "Empty Pictuces (screenshots)"
             ]
-        , mchecklist "Weekly Review"
+        , mchecklist "🏠 Weekly Review"
             [ "Collect loose papers and materials"
             , "Clear workspace"
             , "Empty physical inbox"
