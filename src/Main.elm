@@ -20,11 +20,17 @@ myChecklists : Array Checklist
 myChecklists =
     Array.fromList
         [ mchecklist "Work Daily Review"
-            [ "Item A1"
-            , "Item A2"
-            , "Item A3"
-            , "Item A4"
-            , "Item A5"
+            [ "Journal"
+            , "Install updates"
+            , "Sync (tasks, books, passwords)"
+            , "Refresh PGP keys"
+            , "Fill hours in Odoo"
+            ]
+        , mchecklist "Work Weekly Review"
+            [ "Clear desk"
+            , "Empty Gmail Inbox"
+            , "Empty Downloads"
+            , "Empty Pictuces (screenshots)"
             ]
         , mchecklist "Weekly Review"
             [ "Collect loose papers and materials"
