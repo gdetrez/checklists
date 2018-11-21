@@ -7,7 +7,8 @@ git reset gh-pages
 git checkout gh-pages
 git add index.html elm.js ./*.css
 git commit -m 'Deploy'
+git push origin gh-pages
 git checkout tmp-deploy
 git reset master
 git checkout master
-git push origin gh-pages
+git branch -d tmp-deploy
