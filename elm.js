@@ -4688,7 +4688,12 @@ var author$project$Main$myChecklists = elm$core$Array$fromList(
 			author$project$Main$mchecklist,
 			'Work Daily Review',
 			_List_fromArray(
-				['Item A1', 'Item A2', 'Item A3', 'Item A4', 'Item A5'])),
+				['Journal', 'Install updates', 'Sync (tasks, books, passwords)', 'Refresh PGP keys', 'Fill hours in Odoo'])),
+			A2(
+			author$project$Main$mchecklist,
+			'Work Weekly Review',
+			_List_fromArray(
+				['Clear desk', 'Empty Gmail Inbox', 'Empty Downloads', 'Empty Pictuces (screenshots)'])),
 			A2(
 			author$project$Main$mchecklist,
 			'Weekly Review',
