@@ -4686,17 +4686,17 @@ var author$project$Main$myChecklists = elm$core$Array$fromList(
 		[
 			A2(
 			author$project$Main$mchecklist,
-			'Work Daily Review',
+			'🏢 Daily Review',
 			_List_fromArray(
 				['Journal', 'Install updates', 'Sync (tasks, books, passwords)', 'Refresh PGP keys', 'Fill hours in Odoo'])),
 			A2(
 			author$project$Main$mchecklist,
-			'Work Weekly Review',
+			'🏢 Weekly Review',
 			_List_fromArray(
 				['Clear desk', 'Empty Gmail Inbox', 'Empty Downloads', 'Empty Pictuces (screenshots)'])),
 			A2(
 			author$project$Main$mchecklist,
-			'Weekly Review',
+			'🏠 Weekly Review',
 			_List_fromArray(
 				['Collect loose papers and materials', 'Clear workspace', 'Empty physical inbox', 'Empty Email Inbox', 'Empty Inbox Folder', 'Empty Downloads', 'Empty Miniflux']))
 		]));
