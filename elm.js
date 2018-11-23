@@ -5092,20 +5092,28 @@ var author$project$Main$toggleItem = F2(
 	});
 var author$project$Main$update = F2(
 	function (msg, m) {
-		if (msg.$ === 'SelectChecklist') {
-			var i = msg.a;
-			return _Utils_Tuple2(
-				_Utils_update(
-					m,
-					{
-						currentChecklist: elm$core$Maybe$Just(i)
-					}),
-				elm$core$Platform$Cmd$none);
-		} else {
-			var i = msg.a;
-			return A2(author$project$Main$toggleItem, i, m);
+		switch (msg.$) {
+			case 'SelectChecklist':
+				var i = msg.a;
+				return _Utils_Tuple2(
+					_Utils_update(
+						m,
+						{
+							currentChecklist: elm$core$Maybe$Just(i)
+						}),
+					elm$core$Platform$Cmd$none);
+			case 'Toggle':
+				var i = msg.a;
+				return A2(author$project$Main$toggleItem, i, m);
+			default:
+				return _Utils_Tuple2(
+					_Utils_update(
+						m,
+						{currentChecklist: elm$core$Maybe$Nothing}),
+					elm$core$Platform$Cmd$none);
 		}
 	});
+var author$project$Main$Back = {$: 'Back'};
 var author$project$Main$Toggle = function (a) {
 	return {$: 'Toggle', a: a};
 };
@@ -5198,11 +5206,18 @@ var author$project$Main$viewChecklistItem = F2(
 						]))
 				]));
 	});
+var elm$html$Html$a = _VirtualDom_node('a');
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$html$Html$h1 = _VirtualDom_node('h1');
 var elm$html$Html$header = _VirtualDom_node('header');
 var elm$html$Html$section = _VirtualDom_node('section');
 var elm$html$Html$ul = _VirtualDom_node('ul');
+var elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
 var author$project$Main$viewChecklist = function (checklist) {
 	return A2(
 		elm$html$Html$div,
@@ -5230,9 +5245,23 @@ var author$project$Main$viewChecklist = function (checklist) {
 					])),
 				A2(
 				elm$html$Html$section,
-				_List_Nil,
 				_List_fromArray(
 					[
+						elm$html$Html$Attributes$class('measure center')
+					]),
+				_List_fromArray(
+					[
+						A2(
+						elm$html$Html$a,
+						_List_fromArray(
+							[
+								elm$html$Html$Attributes$href('#'),
+								elm$html$Html$Events$onClick(author$project$Main$Back)
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('< Back')
+							])),
 						A2(
 						elm$html$Html$ul,
 						_List_fromArray(
@@ -5245,13 +5274,6 @@ var author$project$Main$viewChecklist = function (checklist) {
 };
 var author$project$Main$SelectChecklist = function (a) {
 	return {$: 'SelectChecklist', a: a};
-};
-var elm$html$Html$a = _VirtualDom_node('a');
-var elm$html$Html$Attributes$href = function (url) {
-	return A2(
-		elm$html$Html$Attributes$stringProperty,
-		'href',
-		_VirtualDom_noJavaScriptUri(url));
 };
 var author$project$Main$viewChecklistLink = function (_n0) {
 	var i = _n0.a;
