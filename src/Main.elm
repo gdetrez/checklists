@@ -29,8 +29,12 @@ myChecklists =
         , mchecklist "🏢 Weekly Review"
             [ "Clear desk"
             , "Empty Gmail Inbox"
+            , "Empty tabs"
+            , "Empty onetab"
             , "Empty Downloads"
             , "Empty Pictuces (screenshots)"
+            , "Review taswarrior tasks"
+            , "Review phabricator tasks"
             ]
         , mchecklist "🏠 Weekly Review"
             [ "Collect loose papers and materials"
