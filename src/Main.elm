@@ -67,6 +67,7 @@ getCurrentChecklist m =
 type Msg
     = SelectChecklist Int
     | Toggle Int
+    | Back
 
 
 init : () -> ( Model, Cmd Msg )
@@ -83,6 +84,9 @@ update msg m =
         Toggle i ->
             m
                 |> toggleItem i
+
+        Back ->
+            ( { m | currentChecklist = Nothing }, Cmd.none )
 
 
 toggleItem : Int -> Model -> ( Model, Cmd Msg )
@@ -167,8 +171,9 @@ viewChecklist checklist =
             [ h1 [ class "f3 f2-m f1-l fw2 black-90 mv3" ]
                 [ text checklist.title ]
             ]
-        , section []
-            [ ul [ class "pl0 list measure center" ] <| List.indexedMap viewChecklistItem checklist.items
+        , section [ class "measure center" ]
+            [ a [ href "#", onClick Back ] [ text "< Back" ]
+            , ul [ class "pl0 list measure center" ] <| List.indexedMap viewChecklistItem checklist.items
             ]
         ]
 
