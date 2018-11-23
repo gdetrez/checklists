@@ -4693,7 +4693,7 @@ var author$project$Main$myChecklists = elm$core$Array$fromList(
 			author$project$Main$mchecklist,
 			'🏢 Weekly Review',
 			_List_fromArray(
-				['Clear desk', 'Empty Gmail Inbox', 'Empty Downloads', 'Empty Pictuces (screenshots)'])),
+				['Clear desk', 'Empty Gmail Inbox', 'Empty tabs', 'Empty onetab', 'Empty Downloads', 'Empty Pictuces (screenshots)', 'Review taswarrior tasks', 'Review phabricator tasks'])),
 			A2(
 			author$project$Main$mchecklist,
 			'🏠 Weekly Review',
