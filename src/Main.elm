@@ -28,13 +28,12 @@ myChecklists =
             ]
         , mchecklist "🏢 Weekly Review"
             [ "Clear desk"
-            , "Empty Gmail Inbox"
-            , "Empty tabs"
-            , "Empty onetab"
-            , "Empty Downloads"
+            , "Clear tabs"
+            , "Empty email inbox"
+            , "Empty ~/Downloads"
             , "Empty Pictuces (screenshots)"
+            , "Review journal"
             , "Review taswarrior tasks"
-            , "Review phabricator tasks"
             ]
         , mchecklist "🏠 Weekly Review"
             [ "Collect loose papers and materials"
