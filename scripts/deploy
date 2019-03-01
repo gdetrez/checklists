@@ -3,7 +3,7 @@ set -eux
 
 make
 git checkout -b tmp-deploy
-git reset gh-pages
+git reset origin/gh-pages
 git checkout gh-pages
 git add index.html elm.js ./*.css
 git commit -m 'Deploy'
